@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Data Science with COVID-19</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="float.css" />
+
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+        <a
+          class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black"
+          href="javascript:void(0);"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          >About</a
+        >
+        <a
+          href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/466765"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          target="_blank"
+          >Degree course</a
+        >
+        <div class="subnav">
+          <button class="subnavbtn">
+            Authors<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a
+              href="https://www.linkedin.com/in/leonardo-ghiani-b2398b1a0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BD%2B4iH8DbRT%2BIliA8%2FGjNXA%3D%3D"
+              style="margin-left: 10px; margin-top: 10px; margin-bottom: 10px"
+            >
+              Leonardo Ghiani
+            </a>
+            <a
+              href="#link3"
+              style="margin-left: 10px; margin-top: 10px; margin-bottom: 10px"
+            >
+              Mohamed Alie Kamara
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
+      >
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large"
+          >About</a
+        >
+        <a
+          href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/466765"
+          class="w3-bar-item w3-button w3-padding-large"
+          target="_blank"
+          >Degree course</a
+        >
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-black w3-center" style="padding: 128px 16px">
+      <h1 class="w3-margin w3-jumbo" id="top">HEALTH DATA SCIENCE</h1>
+      <p class="w3-xlarge">
+        On this page you'll learn about the importance of Data Science in the
+        Health sector.
+      </p>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#root">The root of COVID-19</a>
+          <a href="#death">Death by country</a>
+          <a href="#death">Top 10 countries with the highest death rate</a>
+          <a href="#vaccination">Vaccination</a>
+        </div>
+      </div>
+      <button
+        class="w3-button w3-white w3-padding-large w3-large w3-margin-top"
+        onclick="openNav()"
+        style="color: black"
+      >
+        Get started
+      </button>
+    </header>
+
+    <!-- Origin section-->
+    <div
+      class="row w3-black w3-opacity w3-padding-64 w3-container w3-center"
+      id="root"
+    >
+      <div>
+        <h1
+          style="
+            font-size: 22.4px;
+            line-height: 1;
+            overflow-y: visible;
+            margin-bottom: 4px;
+          "
+        >
+          <span><span>Origin of COVID-19</span><br /></span>
+        </h1>
+
+        <p>
+          A short <a href="https://youtu.be/abeYukTNmj0">video</a>
+          documentary by Aljazeera, about the origin of the virus.
+        </p>
+      </div>
+    </div>
+
+    <!-- COVID-19 Total Death by country section -->
+    <div
+      class="row w3-black w3-opacity w3-padding-64 w3-container w3-center"
+      id="death"
+    >
+      <div>
+        <h1
+          style="
+            font-size: 22.4px;
+            line-height: 1;
+            overflow-y: visible;
+            margin-bottom: 4px;
+          "
+        >
+          <span><span>COVID-19 Total Death by country</span><br /></span>
+        </h1>
+        <p>
+          On the left is a map visualizing the total death of COVID-19 in all
+          <br />
+          the listed country and on the right is a bar of top 10 countries with
+          the highest cumulative death, you can interact with it by hovering
+          your mouse on any one of the countries or use the search icon to find
+          a specific country.
+        </p>
+      </div>
+    </div>
+
+    <!-- COVID-19 Total cases by country section -->
+    <div class="row">
+      <div class="columnleft">
+        <div
+          class="tableauPlaceholder"
+          id="viz1653655456945"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="COVID-19 total death per country  "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HealthDataScience-COVID19&#47;Map&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object
+            class="tableauViz"
+            style="display: none"
+            type="html"
+            data="tableau"
+            data="tableau"
+          >
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="HealthDataScience-COVID19&#47;Map" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HealthDataScience-COVID19&#47;Map&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-GB" />
+            <param name="filter" value="publish=yes" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1653655456945");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+
+      <div class="columnright">
+        <div
+          class="tableauPlaceholder"
+          id="viz1653653930414"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="Top 10 countries with the highest death "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HealthDataScience-COVID19&#47;Death&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object
+            class="tableauViz"
+            style="display: none"
+            type="html"
+            data="tableau"
+          >
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="HealthDataScience-COVID19&#47;Death" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;He&#47;HealthDataScience-COVID19&#47;Death&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-GB" />
+            <param name="filter" value="publish=yes" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1653653930414");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <div class="row w3-black w3-opacity w3-padding-64 w3-container w3-center">
+      <div></div>
+    </div>
+
+    <!-- Vaccination by country section -->
+    <div>
+      <iframe
+        id="vaccination"
+        src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&Metric=People+vaccinated+%28by+dose%29&Interval=7-day+rolling+average&Relative+to+Population=true&Color+by+test+positivity=false&country=ARE~PRT~CUB~CHL~SGP~CHN~IND~USA~IDN~PAK~BRA~NGA~BGD~RUS~MEX~JPN~ETH~PHL~EGY~VNM~TUR~IRN~DEU~THA~GBR~CAN~FRA~ITA~OWID_WRL&hideControls=true"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
+    </div>
+
+    <div class="row w3-black w3-opacity w3-padding-64 w3-container w3-center">
+      <div></div>
+    </div>
+
+    <!-- Vaccination by country and age section -->
+    <div>
+      <iframe
+        src="https://ourworldindata.org/grapher/covid-vaccine-by-age?country=~HKG"
+        loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none"
+      ></iframe>
+    </div>
+
+    <div class="row w3-black w3-opacity w3-padding-64 w3-container w3-center">
+      <div></div>
+    </div>
+
+    <!-- About section -->
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h3 id="about" class="w3-margin w3-xlarge">
+        <br /><br />The aim of the project is apply Software Engineering
+        techniques, principles and methodologies in building application
+        assuming the role of a Web developer who's working with a data science
+        health team and constantly needs to update the results, publications and
+        findings from the COVID-19 pandemic, published by the health
+        practitioners.
+      </h3>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black">
+      <div class="w3-xlarge w3-padding-32">
+        <a
+          href="https://www.facebook.com/pages/category/College---university/2-Year-Master-Degree-in-Digital-Transformation-Management-102574278553632/"
+          target="_blank"
+          ><i class="fa fa-facebook-official w3-hover-opacity"></i
+        ></a>
+        <a href="https://www.instagram.com/dtm_unibo/" target="_blank"
+          ><i class="fa fa-instagram w3-hover-opacity"></i
+        ></a>
+        <a href="https://www.linkedin.com/school/unibo/" target="_blank"
+          ><i class="fa fa-linkedin w3-hover-opacity"></i
+        ></a>
+      </div>
+      <p style="color: white">
+        &#9877; Software Engineering and Health Data Science &#9877;
+      </p>
+    </footer>
+
+    <!--Javascript link code section-->
+    <script src="javascript.js"></script>
+
+    <!--Floating arrow button
+		<a href="#top" class="float">
+			<i class="fa fa-arrow my-float">Top</i>
+			</a>-->
+  </body>
+</html>

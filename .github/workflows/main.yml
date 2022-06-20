@@ -15,5 +15,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  call-workflow:
-     uses: Kmohamedalie/html5validator/.github/workflows/Cyb3r-Jak3/html5validator-action@v0.4.2
+  call-workflow-1:
+     uses: html5validator/blob/main/.github/workflows/pypi-deploy.yml@main
+  call-workflow-2:
+     uses: html5validator/blob/main/.github/workflows/tests.yml@main

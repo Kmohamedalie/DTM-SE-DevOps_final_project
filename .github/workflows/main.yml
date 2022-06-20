@@ -40,5 +40,5 @@ jobs:
       # uses: Cyb3r-Jak3/html5validator-action@9b2d5145278274ecc8b7577f18f7d0f4482d2624
         uses: Cyb3r-Jak3/html5validator-action@v7.1.1
         with:
-            root: master/webiste/index.html
+            root: webiste/index.html
 

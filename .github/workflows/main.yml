@@ -37,9 +37,9 @@ jobs:
       
       # use the action to validate our html code
       - name: HTML5Validator
-        uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+        uses: ./github/Cyb3r-Jak3/html5validator-action@v0.4.2
         with:
           root: tests/
-          run: echo blacklist: invalid
+          blacklist: invalid
           
    

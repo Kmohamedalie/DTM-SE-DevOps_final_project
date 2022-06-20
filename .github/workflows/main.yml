@@ -36,5 +36,10 @@ jobs:
           echo test, and deploy your project.
       
       # use the action to validate our html code
-      - uses: Cyb3r-Jak3/html5validator-action@v0.4.2
-
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+        with:
+          root: tests/
+          blacklist: invalid
+          
+   

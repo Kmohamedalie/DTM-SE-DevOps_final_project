@@ -40,6 +40,6 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v0.4.2
         with:
           root: tests/
-          blacklist: invalid
+          run: echo blacklist: invalid
           
    

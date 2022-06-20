@@ -37,6 +37,6 @@ jobs:
       
       # use the action to validate our html code
       - name: HTML5 Validator
-        uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+        uses: actions/Cyb3r-Jak3/html5validator-action@v0.4.2
         with:
           root: html/

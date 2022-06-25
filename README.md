@@ -33,5 +33,5 @@ The yml code can be found [here](https://github.com/Kmohamedalie/DTM_DevOps_fina
 <ol type="i">
   <li>Workflow starts immediately when a push or pull_request is made.</li>
   <li>Utilises the actions/checkout@v3 for (CI/CD)</li>
-  <li>The workflow then uses the HTML5 Validator to check the codes for invalid HTML code.</li>
+  <li>The workflow then uses the <a href="https://github.com/marketplace/actions/html5-validator">HTML5 Validator</html> to check the codes for invalid HTML code.</li>
 </ol>

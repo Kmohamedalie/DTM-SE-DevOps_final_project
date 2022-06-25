@@ -29,9 +29,8 @@ Similar demonstration of these principles can be seen also in Finance with realt
 ## CI/CD PipeLine
 
 - Code
- <html>
-   <body>
-       # This is a basic workflow to help you Validate your html codes in all branches
+<!-- *
+# This is a basic workflow to help you Validate your html codes in all branches
 name: CI
 
 # Controls when the workflow will run
@@ -75,5 +74,4 @@ jobs:
           # Path of the files to test
           root: ./
  
-   </body>
- </html>
+* --/>

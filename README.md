@@ -29,7 +29,7 @@ Similar demonstration of these principles can be seen also in Finance with realt
 ## CI/CD PipeLine
 
 - Code
-<!-- *
+[
 # This is a basic workflow to help you Validate your html codes in all branches
 name: CI
 
@@ -72,6 +72,4 @@ jobs:
       #  uses: Cyb3r-Jak3/html5validator-action@v7.1.1
         with:
           # Path of the files to test
-          root: ./
- 
-* --/>
+          root: ./]

@@ -18,6 +18,9 @@ Similar demonstration of these principles can be seen also in Finance with realt
 
 ## Repository organisation - Branches/TeamWork
   - Branches
+       * Main
+       * DeveloperMode
+       * LeoGhiani-patch-1
   - TeamWork
      
 

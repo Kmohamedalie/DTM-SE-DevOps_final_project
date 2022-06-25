@@ -29,9 +29,8 @@ Similar demonstration of these principles can be seen also in Finance with realt
 ## CI/CD PipeLine
 
 The yml code can be found [here](https://github.com/Kmohamedalie/DTM_DevOps_final_project/blob/main/.github/workflows/main.yml).
-- steps and detail description on how the code works
+- Steps and detail description on how the code works
 <ol type="i">
-  <lh> Workflow</lh>
   <li>Workflow starts immediately when a push or pull_request is made.</li>
   <li>Utilises the actions/checkout@v3 for (CI/CD)</li>
   <li>The workflow then uses the HTML5 Validator to check the codes for invalid HTML code.</li>

@@ -19,7 +19,10 @@ Similar demonstration of these principles can be seen also in Finance with realt
 ## Repository organisation - Branches/TeamWork
   - Branches
        * Main
+         The main is the default branch and where the page deployment is been done.
        * DeveloperMode
+         The developerMode branch is the second and where most of the test is done before
+         final deployment of the main.
        * LeoGhiani-patch-1
 
 

@@ -28,7 +28,7 @@ Similar demonstration of these principles can be seen also in Finance with realt
          This patch provides the READ.me file
 
   - TeamWork
-       The project is realised by previously cited authors according to DevOps principles
+       * The project is realised by previously cited authors according to DevOps principles
        showed during Module 3 classes.
 
 ## CI/CD PipeLine

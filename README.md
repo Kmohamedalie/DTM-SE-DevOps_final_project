@@ -28,11 +28,11 @@ Similar demonstration of these principles can be seen also in Finance with realt
 
   - TeamWork/Collaboration 
        * Contributors: 
-           *  Leonardo Ghiani
+           *  Leonardo Ghiani - 
               Wrote the initial HTML, CSS and Javascript code (front-end) 
               Review the continuous CI/CD and fixed patches.
 
-           *  Mohamed Alie Kamara
+           *  Mohamed Alie Kamara - 
               Analysed and embedded the real-time data from [WHO official website](https://covid19.who.int/) and
               [our world in Data](https://ourworldindata.org/).
                 

@@ -8,7 +8,7 @@ This is built by the DTM students Leonardo Ghiani and Mohamed Alie Kamara.
 ## IDEA
 The main idea is to apply simple DevOps principles in the Data Science field. Here we assume the role 
 of a WebDeveloper/full-stack-engineer working with a team of Data Scientist/Analyst or Business Intelligence 
-experts in a company where his role is to automate and publish the findings internally/ within a company or 
+experts in a company where his role is to automate and publish the findings internally within a company or 
 externally with other stakeholders. For this project we decided to use the free Covid health-data from 
 the [WHO official website](https://covid19.who.int/) , and the Tableau software for simple analysis and data visualization. 
 The section uses live update data from [our world in Data](https://ourworldindata.org/), an official website trusted 

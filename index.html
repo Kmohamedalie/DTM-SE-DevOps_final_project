@@ -106,7 +106,7 @@
         Get started
       </button>
     </header>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Origin section-->
     <div
       class="row w3-black w3-opacity w3-padding-64 w3-container w3-center"
@@ -328,8 +328,33 @@
       </p>
     </footer>
 
-    <!--Javascript link code section-->
-    <script src="javascript.js"></script>
+    <!--Javascript code top button-->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
 
 
   </body>

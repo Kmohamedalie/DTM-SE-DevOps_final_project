@@ -31,6 +31,7 @@ Similar demonstration of these principles can be seen also in Finance with realt
        * The project is realised by previously cited authors according to DevOps principles
        showed during Module 3 classes.
 
+
 ## CI/CD PipeLine
 
 The yml code can be found [here](https://github.com/Kmohamedalie/DTM_DevOps_final_project/blob/main/.github/workflows/main.yml).
